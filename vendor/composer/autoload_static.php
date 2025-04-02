@@ -8,9 +8,9 @@ class ComposerStaticInitd40c8e54211ee6fe75870229ae59ebb5
 {
     public static $files = array (
         '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
+        'b33e3d135e5d9e47d845c576147bda89' => __DIR__ . '/..' . '/php-di/php-di/src/functions.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
-        'b33e3d135e5d9e47d845c576147bda89' => __DIR__ . '/..' . '/php-di/php-di/src/functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -20,6 +20,7 @@ class ComposerStaticInitd40c8e54211ee6fe75870229ae59ebb5
             'Slim\\Views\\' => 11,
             'Slim\\Psr7\\' => 10,
             'Slim\\Http\\' => 10,
+            'Slim\\Flash\\' => 11,
             'Slim\\' => 5,
         ),
         'P' => 
@@ -44,6 +45,7 @@ class ComposerStaticInitd40c8e54211ee6fe75870229ae59ebb5
         ),
         'D' => 
         array (
+            'DI\\Bridge\\Slim\\' => 15,
             'DI\\' => 3,
         ),
     );
@@ -65,6 +67,10 @@ class ComposerStaticInitd40c8e54211ee6fe75870229ae59ebb5
         array (
             0 => __DIR__ . '/..' . '/slim/http/src',
         ),
+        'Slim\\Flash\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/slim/flash/src',
+        ),
         'Slim\\' => 
         array (
             0 => __DIR__ . '/..' . '/slim/slim/Slim',
@@ -80,8 +86,8 @@ class ComposerStaticInitd40c8e54211ee6fe75870229ae59ebb5
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
-            1 => __DIR__ . '/..' . '/psr/http-factory/src',
+            0 => __DIR__ . '/..' . '/psr/http-factory/src',
+            1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
         'Psr\\Container\\' => 
         array (
@@ -102,6 +108,10 @@ class ComposerStaticInitd40c8e54211ee6fe75870229ae59ebb5
         'FastRoute\\' => 
         array (
             0 => __DIR__ . '/..' . '/nikic/fast-route/src',
+        ),
+        'DI\\Bridge\\Slim\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-di/slim-bridge/src',
         ),
         'DI\\' => 
         array (

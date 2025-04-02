@@ -1,6 +1,15 @@
 <h1>Users</h1>
+
+<?php if (isset($messages['success'])): ?>
+    <?php foreach ($messages['success'] as $message): ?>
+        <div style="color: green; padding: 10px; margin: 10px 0; border: 1px solid green; background: #e8ffe8;">
+            <?= htmlspecialchars($message) ?>
+        </div>
+    <?php endforeach ?>
+<?php endif ?>
+
 <hr>
-<button><a href="/users/new">Add new user</a></button>
+<button ><a href="/users/new">Add new user</a></button>
 <br>
 <br>
 <form action="/users" method="get">

@@ -1,13 +1,18 @@
 
 <table>
-  <?php foreach ($users as $user): ?>
+    <?php foreach ($user as $u): ?>
     <tr>
       <td>
-          <?= $user['id'] ?>
+          <?= $u['id'] ?>
       </td>
       <td>
-          <a href="/users/<?= $user['id'] ?>"><?= $user['firstName'] ?></a>
+          <?= $u['name'] ?>
+      </td>
+      <td>
+          <?= $u['email'] ?>
       </td>
     </tr>
-  <?php endforeach ?>
+    <?php endforeach ?>
 </table>
+<br>
+<a href="/users">Back to users</a>
