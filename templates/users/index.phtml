@@ -1,0 +1,25 @@
+<h1>Users</h1>
+<hr>
+<button><a href="/users/new">Add new user</a></button>
+<br>
+<br>
+<form action="/users" method="get">
+  <input type="search" name="term" value="<?= htmlspecialchars($term) ?>" />
+  <input type="submit" value="Search" />
+</form>
+<hr>
+<table>
+  <?php foreach ($users as $user): ?>
+    <tr>
+      <td>
+        <?= htmlspecialchars($user['id']) ?>
+      </td>
+      <td>
+        <?= htmlspecialchars($user['name']) ?>
+      </td>
+      <td>
+        <?= htmlspecialchars($user['email']) ?>
+      </td>
+    </tr>
+  <?php endforeach ?>
+</table>
