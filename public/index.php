@@ -17,13 +17,6 @@ $container->set('renderer', function () {
 
 $app = AppFactory::createFromContainer($container);
 
-// Добавляем middleware для сессий
-$app->add(function ($request, $handler) {
-    if (session_status() === PHP_SESSION_NONE) {
-        session_start();
-    }
-    return $handler->handle($request);
-});
 
 $container->set('flash', function () {
     return new \Slim\Flash\Messages();
